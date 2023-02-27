@@ -1,0 +1,49 @@
+#include <aba_for_c.h>
+
+
+extern "C" void FOR_NAME(umat)(
+double* STRESS,void* STATEV,double* DDSDDE,
+void* SSE,void* SPD,void* SCD,void* RPL,void* DDSDDT,void* DRPLDE,void* DRPLDT,
+void* STRAN,double* DSTRAN,void* TIME,void* DTIME,void* TEMP,void* DTEMP,
+void* PREDEF,void* DPRED,void* CMNAME,int& NDI,int& NSHR,int& NTENS,
+void* NSTATV,double* PROPS,void* NPROPS,void* COORDS,void* DROT,void* PNEWDT,
+void* CELENT,void* DFGRD0,void* DFGRD1,void* NOEL,void* NPT,void* LAYER,
+void* KSPT,void* JSTEP,void* KINC)
+{
+
+
+
+
+
+
+}
+
+
+
+
+
+
+/*
+      SUBROUTINE UMAT(STRESS,STATEV,DDSDDE,SSE,SPD,SCD,
+     1 RPL,DDSDDT,DRPLDE,DRPLDT,
+     2 STRAN,DSTRAN,TIME,DTIME,TEMP,DTEMP,PREDEF,DPRED,CMNAME,
+     3 NDI,NSHR,NTENS,NSTATV,PROPS,NPROPS,COORDS,DROT,PNEWDT,
+     4 CELENT,DFGRD0,DFGRD1,NOEL,NPT,LAYER,KSPT,JSTEP,KINC)
+C
+      INCLUDE 'ABA_PARAM.INC'
+C
+      CHARACTER*80 CMNAME
+      DIMENSION STRESS(NTENS),STATEV(NSTATV),
+     1 DDSDDE(NTENS,NTENS),DDSDDT(NTENS),DRPLDE(NTENS),
+     2 STRAN(NTENS),DSTRAN(NTENS),TIME(2),PREDEF(1),DPRED(1),
+     3 PROPS(NPROPS),COORDS(3),DROT(3,3),DFGRD0(3,3),DFGRD1(3,3),
+     4 JSTEP(4)
+
+
+      user coding to define DDSDDE, STRESS, STATEV, SSE, SPD, SCD
+      and, if necessary, RPL, DDSDDT, DRPLDE, DRPLDT, PNEWDT
+
+
+      RETURN
+      END
+*/
